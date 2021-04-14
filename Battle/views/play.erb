@@ -4,8 +4,8 @@
   </head>
   <body>
     <%= @player_1_name %> vs. <%= @player_2_name %> <br>
-    <%= @player_1_name %>'s HP: 100 <br>
-    <%= @player_2_name %>'s HP: 100 <br>
+    <%= @player_1_name %>'s HP: <%= $player_1.hp %> <br>
+    <%= @player_2_name %>'s HP: <%= $player_2.hp %> <br>
     <form action="/attack">
       <input type="submit" name="Attack" id="player_1_attack">
     </form>
